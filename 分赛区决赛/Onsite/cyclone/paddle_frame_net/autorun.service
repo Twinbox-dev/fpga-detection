@@ -1,0 +1,14 @@
+[Unit]
+Description=My Python Application
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/paddle_frame_net
+ExecStart=/opt/paddle_frame_net/run.sh
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

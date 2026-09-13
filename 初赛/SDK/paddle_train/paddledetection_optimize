@@ -1,0 +1,56 @@
+# 在 ppdet/modeling/losses/ssd_loss.py 文件中修改 SSDLoss 类
+
+def __init__(self,
+             overlap_threshold=0.5,
+             neg_pos_ratio=3.0,
+             loc_loss_weight=1.0,
+             conf_loss_weight=1.0,
+             prior_box_var=[0.1, 0.1, 0.2, 0.2],
+             class_weights=None):  # 添加类别权重参数
+    super(SSDLoss, self).__init__()
+    self.overlap_threshold = overlap_threshold
+    self.neg_pos_ratio = neg_pos_ratio
+    self.loc_loss_weight = loc_loss_weight
+    self.conf_loss_weight = conf_loss_weight
+    self.prior_box_var = [1. / a for a in prior_box_var]
+    self.class_weights = class_weights  # 保存类别权重
+
+def forward(self, boxes, scores, gt_bbox, gt_label, prior_boxes):
+    # 现有代码...
+    
+    # 计算置信度损失时使用类别权重
+    if self.class_weights is not None:
+        class_weights = paddle.to_tensor(self.class_weights, dtype=scores.dtype)
+        conf_loss = F.cross_entropy(scores, targets_label, weight=class_weights, reduction="none")
+    else:
+        conf_loss = F.cross_entropy(scores, targets_label, reduction="none")
+    
+    # 现有代码...
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+# 在 ppdet/modeling/heads/ssd_head.py 文件中修改 SSDHead 类
+
+def __init__(self,
+             num_classes=80,
+             in_channels=(512, 1024, 512, 256, 256, 256),
+             anchor_generator=AnchorGeneratorSSD().__dict__,
+             kernel_size=3,
+             padding=1,
+             use_sepconv=False,
+             conv_decay=0.,
+             loss='SSDLoss'):
+    # 现有代码...
+    # 确保 loss 配置包含 class_weights
+    if isinstance(loss, dict) and 'class_weights' in loss:
+        self.loss = create(loss['type'], **loss)
+    else:
+        self.loss = create(loss)

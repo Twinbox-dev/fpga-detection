@@ -1,0 +1,46 @@
+{
+  "version": "6.1.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "zhe_zhou",
+      "points": [
+        [
+          167.91666666666669,
+          82.26190476190476
+        ],
+        [
+          339.34523809523813,
+          432.26190476190476
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "zhe_zhou",
+      "points": [
+        [
+          102.4404761904762,
+          345.95238095238096
+        ],
+        [
+          397.08333333333337,
+          135.23809523809524
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "zhe_zhou48.jpg",
+  "imageData": null,
+  "imageHeight": 480,
+  "imageWidth": 640
+}

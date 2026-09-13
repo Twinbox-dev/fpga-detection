@@ -1,0 +1,18 @@
+原始图片路径: /opt/paddle_frame_net/tmp/14efbd28-eaa3-49b7-91e5-2dc9286ffda1.jpg
+检测到目标数: [{'confidence': 0.9997, 'y2': 308, 'class_id': 0, 'x2': 434, 'class_name': 'ca_shang', 'y1': 279, 'x1': 325}, {'confidence': 0.9981, 'y2': 315, 'class_id': 0, 'x2': 275, 'class_name': 'ca_shang', 'y1': 264, 'x1': 162}, {'confidence': 0.998, 'y2': 429, 'class_id': 0, 'x2': 296, 'class_name': 'ca_shang', 'y1': 297, 'x1': 269}, {'confidence': 0.9777, 'y2': 245, 'class_id': 0, 'x2': 293, 'class_name': 'ca_shang', 'y1': 105, 'x1': 262}]
+推理耗时: 408.91 ms
+检测图片(Base64前10字符): /9j/4AAQSk...
+输出路径: /opt/paddle_frame_net/tmp/14efbd28-eaa3-49b7-91e5-2dc9286ffda1_detect.jpg
+检测图片大小: 141599 bytes
+
+
+
+{
+  "image_path": "/opt/paddle_frame_net/tmp/f50881b0-36bb-4bb2-b902-0150ab119a28.jpg",
+  "objects": [],
+  "inference_time_ms": 409.12,
+  "detect_image": "/9j/4AAQSkZJ...mlUsowaAHNNySD26YpjOSRz05pAT0/SmOxzhvzoAWRifvHt2qNpABtB57UrEgZFMLkpxQB//9k=",
+  "output_path": "/opt/paddle_frame_net/tmp/f50881b0-36bb-4bb2-b902-0150ab119a28_detect.jpg",
+  "detect_image_size": 94541
+}
+

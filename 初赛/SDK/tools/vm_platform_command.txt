@@ -1,0 +1,17 @@
+
+cd /opt
+sudo tar -zxvf nna.tar.gz
+export PATH=/opt/software/gcc-linaro-5.4.1-2017.05-x86_64_arm-linux-gnueabihf/bin:$PATH
+export AIEP_HOST=172.16.
+
+编译demo
+cd /opt/nna
+sudo ./build.sdk.sh
+cd /opt/nna
+sudo ./build.paddlelite.sh
+cd /opt/nna
+sudo ./build.demo.sh
+
+测试结果
+cd ssd_detection
+./

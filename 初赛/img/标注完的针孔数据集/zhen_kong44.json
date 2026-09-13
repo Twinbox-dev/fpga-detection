@@ -1,0 +1,100 @@
+{
+  "version": "6.0.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "zhen_kong",
+      "points": [
+        [
+          302.69961977186307,
+          97.79467680608361
+        ],
+        [
+          335.7794676806083,
+          129.73384030418254
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "zhen_kong",
+      "points": [
+        [
+          188.25095057034218,
+          165.47528517110266
+        ],
+        [
+          220.57034220532316,
+          196.2737642585551
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "zhen_kong",
+      "points": [
+        [
+          252.50950570342212,
+          189.80988593155894
+        ],
+        [
+          290.532319391635,
+          216.8060836501901
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "zhen_kong",
+      "points": [
+        [
+          338.82129277566537,
+          213.76425855513307
+        ],
+        [
+          371.9011406844106,
+          244.94296577946767
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "zhen_kong",
+      "points": [
+        [
+          250.22813688212932,
+          275.7414448669201
+        ],
+        [
+          281.4068441064639,
+          308.82129277566537
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "zhen_kong44.jpg",
+  "imageData": null,
+  "imageHeight": 480,
+  "imageWidth": 640
+}
